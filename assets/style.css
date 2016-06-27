@@ -1,0 +1,110 @@
+/**
+ * f(x) Settings Page Style
+**/
+#poststuff #submitdiv .hndle{
+	cursor: default;
+}
+#submitdiv{
+	margin-top: 6px;
+}
+.fx-settings-page-tabs-ui:after{
+	content:".";display:block;height:0;clear:both;visibility:hidden;
+}
+#fx-sptabs-form:after{
+	content:".";display:block;height:0;clear:both;visibility:hidden;
+}
+#fx-sptabs-form #poststuff:after{
+	content:".";display:block;height:0;clear:both;visibility:hidden;
+}
+#fx-sptabs-form #post-body:after{
+	content:".";display:block;height:0;clear:both;visibility:hidden;
+}
+.fx-sptabs-content{
+	margin-top: 10px;
+}
+.fx-sptabs-content:after{
+	content:".";display:block;height:0;clear:both;visibility:hidden;
+}
+
+/* Panel
+------------------------------------------ */
+
+.fx-sptabs-panel:after{
+	content:".";display:block;height:0;clear:both;visibility:hidden;
+}
+
+/* Section Title */
+#poststuff .fx-sptabs-panel h2{
+	color: #23282d;
+	font-size: 18px;
+	margin: 0;
+	padding: 10px 0;
+	font-weight: 600;
+}
+
+/* Fields
+------------------------------------------ */
+.fx-sp-field{
+	padding: 0;
+}
+.fx-sp-field:after{
+	content:".";display:block;height:0;clear:both;visibility:hidden;
+}
+.fx-sp-label{
+	float: left;
+	width: 220px;
+	min-height: 10px;
+	padding: 0 0 0 0;
+}
+	.fx-sp-label label,
+	.fx-sp-label span{
+		font-size: 16px;
+		font-weight: bold;
+	}
+.fx-sp-content{
+	float: left;
+	width: calc( 100% - 220px );
+	max-width: 100%;
+}
+.fx-sp-description{
+	color: #666;
+	line-height: 1.5;
+	font-size: 14px;
+	font-style: italic;
+	margin: 1em 0;
+}
+/* Utility */
+.fx-sp-p{
+	font-size: 13px;
+	line-height: 1.5;
+	margin: 1em 0;
+}
+.fx-sp-inline{
+	display: inline !important;
+}
+
+	/* 1 column */
+	@media only screen and ( max-width: 1100px ) {
+		.wp-admin:not(.folded) .fx-sp-label{
+			width: 100%;
+			min-height: 0;
+		}
+		.wp-admin:not(.folded) .fx-sp-label p{
+			margin: 0;
+		}
+		.wp-admin:not(.folded) .fx-sp-content{
+			width: 100%;
+		}
+	}
+	@media only screen and ( max-width: 980px ) {
+		.wp-admin .fx-sp-label{
+			width: 100%;
+			min-height: 0;
+		}
+		.wp-admin .fx-sp-label p{
+			margin: 0;
+		}
+		.wp-admin .fx-sp-content{
+			width: 100%;
+		}
+	}
